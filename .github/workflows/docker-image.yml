@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag guresonur/devtron-dashboard-19102023:0.0.1
+      run: docker build . --file Dockerfile --tag guresonur/devtron-dashboard-19102023:0.0.2
      
 
     - name: Log in to Docker Hub (or another registry)
