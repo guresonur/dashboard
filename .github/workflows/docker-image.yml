@@ -22,4 +22,4 @@ jobs:
       run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
 
     - name: Push Docker image
-      run: docker push guresonur/devtron-dashboard-19102023:0.0.1
+      run: docker push guresonur/devtron-dashboard-19102023:0.0.2
