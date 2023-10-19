@@ -139,7 +139,6 @@ const NavigationStack = {
     iconClass: 'nav-short-stack',
     icon: StackManagerIcon,
     href: URLS.STACK_MANAGER,
-    markOnlyForSuperAdmin: true,
 }
 interface NavigationType extends RouteComponentProps<{}> {
     serverMode: SERVER_MODE
