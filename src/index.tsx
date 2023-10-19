@@ -34,6 +34,9 @@ interface customEnv {
     CONFIGURABLE_TIMEOUT?: string
     HIDE_APPLICATION_GROUPS?: boolean
     K8S_CLIENT?: boolean
+    HIDE_APPLICATIONS?: boolean
+    HIDE_CLUSTERS?: boolean
+    HIDE_CHART_STORE?: boolean
     USE_V2?: boolean
     CLUSTER_TERMINAL_CONNECTION_POLLING_INTERVAL?: number
     CLUSTER_TERMINAL_CONNECTION_RETRY_COUNT?: number
