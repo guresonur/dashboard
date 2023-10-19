@@ -15,4 +15,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag guresonur/devtron-dashboard:$(date +%s)
+      run: docker build . --file Dockerfile --tag guresonur/devtron-dashboard-19102023:0.0.1
+     
+
+    - name: Log in to Docker Hub (or another registry)
+      run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+
+    - name: Push Docker image
+      run: docker push guresonur/devtron-dashboard-19102023:0.0.1
