@@ -36,6 +36,7 @@ const NavigationList = [
         icon: ApplicationsIcon,
         href: URLS.APP,
         isAvailableInEA: true,
+        forceHideEnvKey: 'HIDE_APPLICATIONS',
     },
     {
         title: 'Jobs',
@@ -88,6 +89,7 @@ const NavigationList = [
         icon: ClusterIcon,
         isAvailableInEA: true,
         isAvailableInDesktop: true,
+        forceHideEnvKey: 'HIDE_CLUSTERS',
     },
     {
         title: 'Chart Store',
@@ -97,6 +99,7 @@ const NavigationList = [
         icon: ChartStoreIcon,
         href: URLS.CHARTS,
         isAvailableInEA: true,
+        forceHideEnvKey: 'HIDE_CHART_STORE',
     },
     {
         title: 'Security',
@@ -136,6 +139,7 @@ const NavigationStack = {
     iconClass: 'nav-short-stack',
     icon: StackManagerIcon,
     href: URLS.STACK_MANAGER,
+    markOnlyForSuperAdmin: true,
 }
 interface NavigationType extends RouteComponentProps<{}> {
     serverMode: SERVER_MODE
