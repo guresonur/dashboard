@@ -170,7 +170,6 @@ export default class Navigation extends Component<
             isCommandBarActive: false,
             forceUpdateTime: Date.now(),
         }
-        this.isAirGapped = true
         this.onLogout = this.onLogout.bind(this)
         this.toggleLogoutCard = this.toggleLogoutCard.bind(this)
         this.toggleHelpCard = this.toggleHelpCard.bind(this)
@@ -370,12 +369,6 @@ export default class Navigation extends Component<
                                 }
                             }
                         })}
-                        {!window._env_.K8S_CLIENT && !this.props.isAirgapped && (
-                            <>
-                                <div className="short-nav__divider" />
-                                {this.renderNavLink(NavigationStack, 'short-nav__stack-manager')}
-                            </>
-                        )}
                     </aside>
                 </nav>
                 <CommandErrorBoundary toggleCommandBar={this.toggleCommandBar}>
