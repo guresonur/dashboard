@@ -138,7 +138,7 @@ export default class Login extends Component<LoginProps, LoginFormState> {
 
         return (
             <div className="login__control">
-                <!-- <img src={dt} alt="login" className="login__dt-logo" width="170px" height="120px" /> -->
+               
                 <p className="login__text">Your tool for Rapid, Reliable & Repeatable deployments</p>
                 {this.state.loginList
                     .filter((sso) => sso.active)
