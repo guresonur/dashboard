@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import dt from '../../assets/icons/logo/logo-dt.svg'
+//import dt from '../../assets/icons/logo/logo-dt.svg'
 import LoginIcons from '../../assets/icons/LoginSprite.svg'
 import { Switch, Redirect, Route, NavLink } from 'react-router-dom'
 import { toast } from 'react-toastify'
@@ -138,7 +138,7 @@ export default class Login extends Component<LoginProps, LoginFormState> {
 
         return (
             <div className="login__control">
-                <img src={dt} alt="login" className="login__dt-logo" width="170px" height="120px" />
+                <!-- <img src={dt} alt="login" className="login__dt-logo" width="170px" height="120px" /> -->
                 <p className="login__text">Your tool for Rapid, Reliable & Repeatable deployments</p>
                 {this.state.loginList
                     .filter((sso) => sso.active)
