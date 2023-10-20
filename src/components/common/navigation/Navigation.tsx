@@ -129,6 +129,7 @@ const NavigationList = [
         icon: GlobalConfigIcon,
         isAvailableInEA: true,
         isAvailableInDesktop: true,
+        markOnlyForSuperAdmin: true,
     },
 ]
 
