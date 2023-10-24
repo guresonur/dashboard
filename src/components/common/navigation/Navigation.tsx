@@ -14,6 +14,8 @@ import { ReactComponent as SecurityIcon } from '../../../assets/icons/ic-nav-sec
 import { ReactComponent as BulkEditIcon } from '../../../assets/icons/ic-nav-code.svg'
 import { ReactComponent as GlobalConfigIcon } from '../../../assets/icons/ic-nav-gear.svg'
 import { ReactComponent as StackManagerIcon } from '../../../assets/icons/ic-nav-stack.svg'
+import NavSprite from '../../../assets/icons/navigation-sprite.svg'
+import TextLogo from '../../../assets/icons/ic-nav-kubeman.svg'
 import { Command, CommandErrorBoundary } from '../../command'
 import { ModuleStatus } from '../../v2/devtronStackManager/DevtronStackManager.type'
 import ReactGA from 'react-ga4'
@@ -346,6 +348,18 @@ export default class Navigation extends Component<
                                 })
                             }}
                         >
+                            <div className="short-nav--flex">
+                                <svg
+                                    className="devtron-logo"
+                                    data-testid="click-on-devtron-app-logo"
+                                    viewBox="0 0 40 40"
+                                >
+                                    <use href={`${NavSprite}#nav-short-devtron-logo`}></use>
+                                </svg>
+                                <div className="pl-12">
+                                    <img src={TextLogo} alt="devtron" className="devtron-logo devtron-logo--text" />
+                                </div>
+                            </div>
                         </NavLink>
                         {NavigationList.map((item) => {
                             if (this.canShowNavOption(item)) {
